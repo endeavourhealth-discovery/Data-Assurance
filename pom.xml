@@ -38,7 +38,7 @@
             <snapshots />
             <id>snapshots</id>
             <name>libs-snapshot</name>
-            <url>http://maven.endeavourhealth.net:8081/artifactory/libs-snapshot</url>
+            <url>https://maven.endeavourhealth.net/artifactory/libs-snapshot</url>
         </repository>
         <repository>
             <snapshots>
@@ -46,7 +46,7 @@
             </snapshots>
             <id>central</id>
             <name>libs-release</name>
-            <url>http://maven.endeavourhealth.net:8081/artifactory/libs-release</url>
+            <url>https://maven.endeavourhealth.net/artifactory/libs-release</url>
         </repository>
     </repositories>
 

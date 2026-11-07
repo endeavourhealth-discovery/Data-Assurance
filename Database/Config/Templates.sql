@@ -696,7 +696,7 @@ values (
           </div>
           <div class="form-group" *ngIf="extension.url==''http://endeavourhealth.org/fhir/StructureDefinition/primarycare-encounter-treatment-function-extension''" >
             <label for="Treatment">Treatment</label>
-            <input id="Source" class="form-control" type="text" disabled value="{{extension.valueCodeableConcept.coding[0].display}}">
+            <input id="Treatment" class="form-control" type="text" disabled value="{{extension.valueCodeableConcept.coding[0].display}}">
           </div>
         </div>
         <div class="form-group">

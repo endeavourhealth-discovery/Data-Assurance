@@ -39,5 +39,4 @@ public class AdminEndpoint {
             .build();
     }
 
-
 }

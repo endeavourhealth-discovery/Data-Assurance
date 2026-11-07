@@ -9,10 +9,7 @@ import org.endeavourhealth.core.database.dal.publisherTransform.models.ResourceF
 import org.endeavourhealth.core.database.dal.publisherTransform.models.SourceFileRecord;
 import org.hl7.fhir.instance.model.ResourceType;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 public class Mock_FileMappingDAL implements SourceFileMappingDalI {
     public static final String LEAF_NO_AUDIT = "leaf.no.audit";
@@ -49,6 +46,18 @@ public class Mock_FileMappingDAL implements SourceFileMappingDalI {
             fieldMappings.add(new ResourceFieldMapping().setSourceLocation(LEAF_WITH_PARENT_AND_CHILD_AUDIT));
 
         return fieldMappings;
+    }
+
+    @Override
+    public Map<UUID, ResourceFieldMappingAudit> findAllMappingsForResource(UUID uuid, ResourceType resourceType, UUID uuid1) throws Exception {
+        //not used by this app, so safe to return an empty map
+        return new HashMap<>();
+    }
+
+    @Override
+    public String getPermanentStoragePath() throws Exception {
+        //not needed for anything in this app, so safe to return null
+        return null;
     }
 
 }
